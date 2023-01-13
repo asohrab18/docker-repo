@@ -1,0 +1,2 @@
+https://www.youtube.com/watch?v=x1BR0D-buQg
+This tutorial is to connect spring cloud config server to github remote repository so that config client can get properties from github repository of config server.
