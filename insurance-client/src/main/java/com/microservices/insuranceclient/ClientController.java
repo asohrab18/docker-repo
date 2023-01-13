@@ -21,6 +21,7 @@ public class ClientController {
 	@Value("${insurance.provider.url}")
 	private String url;
 	
+	@SuppressWarnings("unchecked")
 	@GetMapping("plans")
 	public List<String> getPlans() {
 		List<String> plans = restTemplate.getForObject(url, List.class);

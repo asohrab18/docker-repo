@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("insurance-service")
 public class InsuranceController {
 
-	@GetMapping("new-plans")
+	@GetMapping("plans")
 	public List<String>getPlans(){
-		return Arrays.asList("Platinum","Gold","Silver");
+		return Arrays.asList("PA","PB","PC","PD","PE");
 	}
 }
