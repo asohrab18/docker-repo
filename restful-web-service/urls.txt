@@ -1,3 +1,10 @@
+https://www.youtube.com/watch?v=7O80TOISy7I
+This tutorial is to create Docker Image of Spring Boot Project & to run this image on multiple containers having different ports.
+
+REST APIs:
 http://localhost:8000/greetings/hello
 http://localhost:8000/greetings/hello-bean
 http://localhost:8000/greetings/hello-bean/John
+
+
+
