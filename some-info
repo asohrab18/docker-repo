@@ -1,0 +1,23 @@
+I uploaded 3 images as Repositories on my Docker Hub Account. PULL Commands are as:
+docker pull asohrab18/spring-cloud-discovery-eureka-server
+docker pull asohrab18/microservice-eureka-client-x
+docker pull asohrab18/microservice-eureka-client-y
+
+NOTE: microservice-eureka-client-y calls APIs of microservice-eureka-client-x using RestTemplate via EUREKA SERVER.
+
+RELATED APIs URLs:
+
+EUREKA SERVER:
+http://localhost:8761
+
+microservice-eureka-client-x:
+http://localhost:8001/employees/all
+http://localhost:8001/employees/id/1
+
+microservice-eureka-client-y:
+http://localhost:8002/information/employees
+http://localhost:8002/information/employees/1
+
+
+After pulling images at our local system (Docker), the docker-compose.yaml file can be executed by command in CMD Prompt(Windows OS): 
+Command is "docker-compose up" 
