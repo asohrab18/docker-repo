@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
 
-  currency-exchange:
+  microservice-eureka-client-x:
     image: asohrab18/microservice-eureka-client-x:latest
     mem_limit: 700m
     ports:
@@ -14,7 +14,7 @@ services:
     environment:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://eureka-discovery-server:8761/eureka
 
-  currency-conversion:
+  microservice-eureka-client-y:
     image: asohrab18/microservice-eureka-client-y:latest
     mem_limit: 700m
     ports:
