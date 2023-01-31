@@ -24,6 +24,6 @@ public class GreetingsController {
 	
 	@GetMapping("hello-bean/{name}")
 	public Greeting greetByBean(@PathVariable("name")String username) {
-		return new Greeting("Welcome, "+username+" to the world of Spring Boot!");
+		return new Greeting("Hi "+username+"! Welcome to the world of Spring Boot!");
 	}
 }

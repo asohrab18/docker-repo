@@ -21,3 +21,15 @@ http://localhost:8002/information/employees/1
 
 After pulling images at our local system (Docker), the docker-compose.yaml file can be executed by command in CMD Prompt(Windows OS): 
 Command is "docker-compose up" 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+I uploaded one image as Repository on my Docker Hub Account. PULL Commands is as:
+docker pull asohrab18/restful-web-service
+
+After pulling the image at local Docker, we can run by command in CMD Prompt as:
+docker run -p 8000:8000 <image_id>
+
+NOTE: restful-web-service has simple REST APIs with URLs:
+http://localhost:8000/greetings/hello
+http://localhost:8000/greetings/hello-bean
+http://localhost:8000/greetings/hello-bean/JOHN
