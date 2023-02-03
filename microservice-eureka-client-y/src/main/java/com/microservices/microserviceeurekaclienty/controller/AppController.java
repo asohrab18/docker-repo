@@ -5,21 +5,21 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 import com.microservices.microserviceeurekaclienty.beans.Employee;
 import com.microservices.microserviceeurekaclienty.beans.EmployeesInfo;
+import com.microservices.microserviceeurekaclienty.services.MicroserviceX;
 
 @RestController
 @RequestMapping("information")
 public class AppController {
 
 	@Autowired
-	private RestTemplate restTemplate;
+	private MicroserviceX microserviceX;
 
 	@GetMapping("employees")
 	public EmployeesInfo getEmployees() {
-		return restTemplate.getForObject("http://MICROSERVICE-EUREKA-CLIENT-X/employees/all", EmployeesInfo.class);
+		return microserviceX.getEmployees();
 	}
 
 	@GetMapping("employees/{id}")
@@ -27,6 +27,6 @@ public class AppController {
 		if (id == 0) {
 			return null;
 		}
-		return restTemplate.getForObject("http://MICROSERVICE-EUREKA-CLIENT-X/employees/id/" + id, Employee.class);
+		return microserviceX.getEmployeeById(id);
 	}
 }
