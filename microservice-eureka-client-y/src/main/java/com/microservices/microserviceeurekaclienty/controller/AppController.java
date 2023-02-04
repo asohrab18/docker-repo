@@ -27,6 +27,8 @@ public class AppController {
 		if (id == 0) {
 			return null;
 		}
-		return microserviceX.getEmployeeById(id);
+		Employee employee = microserviceX.getEmployeeById(id);
+		employee.setEmpId(id);
+		return employee;
 	}
 }

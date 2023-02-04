@@ -48,6 +48,10 @@ http://localhost:8002/information/employees/1
 CE Microservice:
 ----------------
 http://localhost:8004/exchange-info/from/USD/to/INR
+http://localhost:8004/sample-api/retry
+http://localhost:8004/sample-api/circuit-breaker
+http://localhost:8004/sample-api/rate-limiter
+http://localhost:8004/sample-api/bulkhead
 
 CC Microservice:
 ----------------
