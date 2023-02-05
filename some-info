@@ -1,5 +1,5 @@
 I uploaded one image as Repository on my Docker Hub Account. PULL Commands is as:
-docker pull asohrab18/restful-web-service
+docker pull asohrab18/restful-web-service-image
 
 After pulling the image at local Docker, we can run by command in CMD Prompt as:
 docker run -p 8000:8000 <image_id>
@@ -13,12 +13,12 @@ http://localhost:8000/greetings/hello-bean/JOHN
 _____________________________________________________________________________________________________________________________________
 
 I uploaded some images as Repositories on my Docker Hub Account. PULL Commands are as:
-docker pull asohrab18/spring-cloud-discovery-eureka-server
-docker pull asohrab18/microservice-eureka-client-x
-docker pull asohrab18/microservice-eureka-client-y
-docker pull asohrab18/currency-conversion-service
-docker pull asohrab18/currency-exchange-service
-docker pull asohrab18/api-gateway
+docker pull asohrab18/spring-cloud-discovery-eureka-server-image
+docker pull asohrab18/microservice-eureka-client-x-image
+docker pull asohrab18/microservice-eureka-client-y-image
+docker pull asohrab18/currency-conversion-service-image
+docker pull asohrab18/currency-exchange-service-image
+docker pull asohrab18/api-gateway-image
 
 
 NOTE: microservice-eureka-client-y calls APIs of microservice-eureka-client-x using RestTemplate via EUREKA SERVER.

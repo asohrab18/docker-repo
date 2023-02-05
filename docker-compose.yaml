@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   currency-conversion-service:
-    image: asohrab18/currency-conversion-service:latest
+    image: asohrab18/currency-conversion-service-image:latest
     mem_limit: 700m
     ports:
       - "8100:8100"
@@ -15,7 +15,7 @@ services:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://eureka-discovery-server:8761/eureka
 
   currency-exchange-service:
-    image: asohrab18/currency-exchange-service:latest
+    image: asohrab18/currency-exchange-service-image:latest
     mem_limit: 700m
     ports:
       - "8004:8004"
@@ -27,7 +27,7 @@ services:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://eureka-discovery-server:8761/eureka
       
   microservice-eureka-client-x:
-    image: asohrab18/microservice-eureka-client-x:latest
+    image: asohrab18/microservice-eureka-client-x-image:latest
     mem_limit: 700m
     ports:
       - "8001:8001"
@@ -39,7 +39,7 @@ services:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://eureka-discovery-server:8761/eureka
 
   microservice-eureka-client-y:
-    image: asohrab18/microservice-eureka-client-y:latest
+    image: asohrab18/microservice-eureka-client-y-image:latest
     mem_limit: 700m
     ports:
       - "8002:8002"
@@ -51,7 +51,7 @@ services:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://eureka-discovery-server:8761/eureka
 
   api-gateway:
-    image: asohrab18/api-gateway:latest
+    image: asohrab18/api-gateway-image:latest
     mem_limit: 700m
     ports:
       - "8765:8765"
@@ -63,7 +63,7 @@ services:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://eureka-discovery-server:8761/eureka
 
   eureka-discovery-server:
-    image: asohrab18/spring-cloud-discovery-eureka-server:latest
+    image: asohrab18/spring-cloud-discovery-eureka-server-image:latest
     mem_limit: 700m
     ports:
       - "8761:8761"
